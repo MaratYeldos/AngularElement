@@ -1,0 +1,29 @@
+.card {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  .card__left-img {
+    width: 150px;
+    height: 200px;
+  }
+  .card__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+  .card__right-title {
+    display: flex;
+    justify-content: space-between;
+  }
+  .card__right-bottom {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+  }
+  .card__right-bottom-heart {
+    flex-grow: 1;
+    text-align: right;
+  } 
+  

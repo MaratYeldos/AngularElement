@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+
+<body>
+    
+<div class="container">
+    <form action="/login.html">
+        <h4>Sign-Up</h4>
+        <div>
+            <input type="text" placeholder="Full Name" required/>
+            <input type="email" placeholder="Email Adress" required/>
+            <input type="password" placeholder="Password" required/>
+        </div>
+        <div>
+            <input type="text" placeholder="DD"/>
+            <input type="text" placeholder="MM"/>
+            <input type="text" placeholder="YYYY"/>
+        </div>
+
+        <h4>Gender</h4>
+        <div>
+            <input type="radio" name="gender" value="male"/>
+            <label>Male</label>
+            <input type="radio" name="gender" value="female"/>
+            <label>Female</label>
+        </div>
+
+        <h4>Payment Details</h4>
+        <div>
+            <input type="radio" name="payment-method" value="card" checked="true"/>
+            <label>Credit Card</label>
+            <input type="radio" name="payment-method" value="paypal"/>
+            <label>Paypal</label>
+        </div>
+        <div>
+            <input type="text" placeholder="Card Number"/>
+            <input type="text" placeholder="Card CVC"/>
+        </div>
+        <div>
+            <select>
+                <option>01 Jan</option>
+                <option>02 Jan</option>
+                <option>03 Jan</option>
+                <option>04 Jan</option>
+                <option>05 Jan</option>
+                <option>06 Jan</option>
+                <option>07 Jan</option>
+            </select>
+            <select>
+                <option>2022</option>
+                <option>2023</option>
+                <option>2024</option>
+                <option>2025</option>
+                <option>2026</option>
+                <option>2027</option>
+                <option>2028</option>
+            </select>
+        </div>
+        <div>
+            <h4>Terms and Conditions</h4>
+            <div>
+                <input id="terms" type="checkbox"/>
+                <label for="terms">I accept the terms and conditions for signing up to this service, and hereby confirm I have read the privacy policy.</label>
+            </div>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+</body>
+
+</html>

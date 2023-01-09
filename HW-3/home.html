@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+</head>
+<body>
+
+    <header>
+        <div class="menu">
+            <div class="hamburger">
+                <a href="#">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
+
+            <div class="menu__items">
+                <ul>
+                    <button class="menu__button">Home</button>
+                </ul>
+                <ul>
+                    <button class="menu__button">Portfolio</button>
+                </ul>
+                <ul>
+                    <button class="menu__button">Contact</button>
+                </ul>
+                <ul>
+                    <button class="menu__button">Info</button>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="#" class="active">
+                        <span class="icon"><i class="fas fa-home"></i></span>
+                        <span class="item">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-desktop"></i></span>
+                        <span class="item">My Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-user-friends"></i></span>
+                        <span class="item">People</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+                        <span class="item">Perfomance</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-database"></i></span>
+                        <span class="item">Development</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-chart-line"></i></span>
+                        <span class="item">Reports</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-user-shield"></i></span>
+                        <span class="item">Admin</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-cog"></i></span>
+                        <span class="item">Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <h3>Movie dashboard</h3>
+        <table class="styled__table">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Movie</th>
+                <th>Year</th>
+            </tr>
+            <thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>CITIZEN KANE</td>
+                <td>1941</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>CASABLANCA</td>
+                <td>1942</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>THE GODFATHER</td>
+                <td>1972</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>GONE WITH THE WIND</td>
+                <td>1939</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>LAWRENCE OF ARABIA</td>
+                <td>1962</td>
+            </tr>
+            <tr class="active__row">
+                <td>6</td>
+                <td>WIZARD OF OZ</td>
+                <td>1939</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>THE GRADUATE</td>
+                <td>1967</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>ON THE WATERFRONT</td>
+                <td>1954</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>SCHINDLER'S LIST</td>
+                <td>1993</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>SINGIN' IN THE RAIN</td>
+                <td>1952</td>
+            </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <div class="footer__menu">
+            <a href="">Home</a>
+            <a href="">Portfolio</a>
+            <a href="">Contact</a>
+            <a href="">Info</a>
+        </div>
+        <p style="color: white;">Element 2022</p>
+    </footer>
+
+    <script>
+        var hamburger = document.querySelector(".hamburger");
+        hamburger.addEventListener("click", function () {
+            document.querySelector("body").classList.toggle("active");
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="/css/registration.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <form action="/login.html">
+                <h2 class="signupHeader">Sign-Up</h2>
+                <div class="signup__tf">
+                    <input type="text" placeholder="Full Name" required/>
+                    <input type="email" placeholder="Email Adress" required/>
+                    <input type="password" placeholder="Password" required/>
+                </div>
+                
+                <h3>Birthday</h3>
+                <div>
+                    <select>
+                        <option>01 Jan</option>
+                        <option>02 Jan</option>
+                        <option>03 Jan</option>
+                        <option>04 Jan</option>
+                        <option>05 Jan</option>
+                        <option>06 Jan</option>
+                        <option>07 Jan</option>
+                    </select>
+                    <select>
+                        <option>2022</option>
+                        <option>2023</option>
+                        <option>2024</option>
+                        <option>2025</option>
+                        <option>2026</option>
+                        <option>2027</option>
+                        <option>2028</option>
+                    </select>
+                </div>
+
+                <h3>Gender</h3>
+                <div class="gender__fields">
+                    <label>Male</label>
+                    <input type="radio" name="gender" value="male"/>
+                    <label>Female</label>
+                    <input type="radio" name="gender" value="female"/>
+                </div>
+        
+                <div class="terms__and__button">
+                    <h3>Terms and Conditions</h3>
+                    <div>
+                        <input id="terms" type="checkbox"/>
+                        <label for="terms">I accept the terms and conditions for signing up to this service, and hereby confirm I have read the privacy policy.</label>
+                    </div>
+                    <button class="submit__button" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

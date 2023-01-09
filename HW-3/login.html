@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400&display=swap");
+
+    body {
+        background-image: url(../img/bg.png);
+        background-size: cover;
+    }
+
+    .container {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        width: 30%;
+        height: 300px;
+        transition: 1s 0.7s ease-in-out;
+        background-color: cornflowerblue;
+        border-radius: 20px;
+        z-index: 6;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 16px 50px 16px;
+    }
+
+    input {
+        font-family: "JetBrains Mono", monospace;
+    }
+
+    input:focus {
+        background: rgb(237, 192, 192);
+    }
+
+    .text__input {
+        width: 100%;
+        background-color: #f0f0f0;
+        margin: 10px 0;
+        height: 30px;
+        border: none;
+        border-radius: 15px;
+        padding: 0 0.4rem;
+    }
+
+    .button__and__checkbox {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .button__and__checkbox label:first-child {
+        margin-bottom: 10px;
+    }
+
+    .submit__button {
+        width: 15vw;
+        height: 49px;
+        color: whitesmoke;
+        background-color: #ff6600;
+        font-size: 16px;
+        font-weight: 600;
+        border: none;
+        border-radius: 8px;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .submit__button:hover {
+        color: gray;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <form action="./home.html">
+            <table>
+                <tr>
+                    <td> Email Address: </td>
+                    <td>
+                        <input class="text__input" type=”email” email=”” required>
+                    </td>
+                </tr>
+                <tr>
+                    <td> Password: </td>
+                    <td>
+                        <input class="text__input" type=”Password” name=”” required>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="button__and__checkbox">
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+                <button class="submit__button" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

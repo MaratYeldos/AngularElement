@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400&display=swap");
+
+body {
+    background-image: url(../img/bg.png);
+    background-size: cover;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 75%;
+    width: 50%;
+    transition: 1s 0.7s ease-in-out;
+    background-color:cornflowerblue;
+    border-radius: 20px;
+    z-index: 6;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    font-family: "JetBrains Mono", monospace;
+}
+
+input:focus {
+    background: rgb(237, 192, 192);
+}
+
+.signupHeader {
+    text-align: center;
+}
+
+.signup__tf input {
+    width: 100%;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    height: 30px;
+    border: none;
+    border-radius: 15px;
+    padding: 0 0.4rem;
+}
+
+.terms__and__button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+.terms__and__button div {
+    margin-bottom: 10px;
+}
+
+.terms__and__button:first-child {
+    margin-top: 20px;
+}
+
+.submit__button {
+    width: 30vw;
+    height: 49px;
+    color: whitesmoke;
+    background-color: #ff6600;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.submit__button:hover {
+    color: gray;
+}
+
+.container:before {
+    content: "";
+    position: absolute;
+    height: 2000px;
+    width: 2000px;
+    top: -10%;
+    right: 90%;
+    transform: translateY(-50%);
+    background-image: linear-gradient(-45deg, #ff6600 0%, #ff8533 100%);
+    transition: 1.8s ease-in-out;
+    border-radius: 50%;
+    z-index: 5;
+}
