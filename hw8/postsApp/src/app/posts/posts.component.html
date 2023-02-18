@@ -1,7 +1,7 @@
 <h1>HW8 - Posts and Comments</h1>
 
-<div class="post__container">
-  <div id="posts">
+
+  <div id="posts" *ngIf="!selectedPostId">
     <ul>
       <li *ngFor="let post of posts">
         <button (click)="onSelectPost(post)">{{ post.title }}</button>
@@ -9,20 +9,20 @@
     </ul>
   </div>
 
-  <h2>Comments for "{{ getPostTitle() }}"</h2>
-  <div *ngIf="comments && comments.length">
-    <ul>
-      <li *ngFor="let comment of comments">
-        <h3>{{ comment.name }}</h3>
-        <p>{{ comment.body }}</p>
-        <p><em>by {{ comment.email }}</em></p>
-      </li>
-    </ul>
-  </div>
-  <div *ngIf="!comments || comments.length === 0">
-    <p>No comments found.</p>
+  <div id="comments" *ngIf="selectedPostId">
+    <button id="back-btn" (click)="goBack()">go back</button>
+    <h2>Comments for "{{ getPostTitle() }}"</h2>
+    <div id="comments__info" *ngIf="comments && comments.length">
+      <ul>
+        <li *ngFor="let comment of comments">
+          <h3>{{ comment.name }}</h3>
+          <p>{{ comment.body }}</p>
+          <p><em>by {{ comment.email }}</em></p>
+        </li>
+      </ul>
+    </div>
+    <div *ngIf="!comments || comments.length === 0">
+      <p>No comments found.</p>
+    </div>
   </div>
 
-</div>
-
-<button id="back-btn" (click)="goBack()">go back</button>
