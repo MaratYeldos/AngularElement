@@ -1,0 +1,42 @@
+
+$text-color: #2D2F30;
+
+.header {
+  padding: 3.2rem 2.3rem 3.2rem 0.7rem;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.3rem;
+    &-img {
+      width: 3.6rem;
+      height: 3.6rem;
+    }
+    &-title {
+      font: normal normal 700 2rem 'Poppins', sans-serif;
+      letter-spacing: .15rem;
+      color: $text-color;
+    }
+  }
+  &__navbar {
+    &-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 5.6rem;
+      &-item {
+        font: normal normal 400 1.2rem 'Poppins', sans-serif;
+        text-transform: uppercase;
+        color: $text-color;
+      }
+    }
+  }
+}

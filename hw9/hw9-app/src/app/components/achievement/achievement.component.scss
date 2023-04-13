@@ -1,0 +1,28 @@
+$background-color: #094b72;
+$all-text-color: #fff;
+
+.achievement {
+  max-width: 142rem;
+  padding: 5.5rem 1rem;
+  background: $background-color;
+  color: $all-text-color;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+  &__heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.8rem;
+    &-title {
+      font: normal normal 900 4.8rem/1.33 "Playfair Display", sans-serif;
+    }
+    &-subtitle {
+      font: normal normal 400 1.8rem/1.78 "Poppins", sans-serif;
+      font-feature-settings: "salt" on, "liga" off;
+    }
+  }
+}

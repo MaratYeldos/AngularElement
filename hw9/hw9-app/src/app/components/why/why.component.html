@@ -1,0 +1,16 @@
+<section class="why mx-auto">
+  <div class="container mx-auto">
+    <div class="why__wrapper md:flex-nowrap md:gap-0 flex-wrap gap-10">
+      <div class="why__left">
+        <h2 class="why__left-title">Why do we help with legalization?</h2>
+        <p class="why__left-subtitle">
+          We are here for UMKM in Indonesia to carry out the legalization process,
+          which is sometimes complicated.
+        </p>
+      </div>
+      <div class="why__right">
+        <app-why-card *ngFor="let card of cards" [card]="card"></app-why-card>
+      </div>
+    </div>
+  </div>
+</section>

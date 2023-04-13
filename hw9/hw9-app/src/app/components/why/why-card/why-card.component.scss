@@ -1,0 +1,27 @@
+
+$card-background-color: #fcfcfc;
+$card-shadow-color: #0000000f;
+$card-title-color: #363940;
+$card-description-color: #8B8C8C;
+
+.why__right-card {
+  width: 25.6rem;
+  height: 25.3rem;
+  padding: 2.4rem;
+  background: $card-background-color;
+  box-shadow: 0px 1.8rem 5.8rem 1.6rem $card-shadow-color;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  &-title {
+    width: 18.1rem;
+    margin-top: 1.8rem;
+    font: normal normal 700 2.2rem/1 "Playfair Display", sans-serif;
+    color: $card-title-color;
+  }
+  &-description {
+    margin-top: 1rem;
+    font: normal normal 400 1.4rem/1.71 "Plus Jakarta Sans", sans-serif;
+    color: $card-description-color;
+  }
+}

@@ -1,0 +1,53 @@
+$gradient: #dce7f7;
+$gradient-dark: #dde7f700;
+$gradient-light: #e8eef6;
+
+$title-color: #094b72;
+$subtitle-color: #4f4f4f;
+
+$button-text-color: #f9f8f9;
+$btn-background-color: #094b72;
+
+.hero {
+  position: relative;
+  max-width: 142rem;
+  padding: 15rem 1rem 31.4rem 1rem;
+  background: linear-gradient(
+      330.22deg,
+      $gradient-dark 25.58%,
+      $gradient 53.4%,
+      $gradient-light 78.25%
+  );
+  z-index: -2;
+  &__title {
+    max-width: 80rem;
+    font: normal normal 700 9rem/1.2 "Playfair Display", sans-serif;
+    text-transform: capitalize;
+    color: $title-color;
+    overflow: hidden;
+  }
+  &__subtitle {
+    display: block;
+    max-width: 59rem;
+    margin-top: 4.6rem;
+    font: normal normal 500 2.4rem/1.58 "Plus Jakarta Sans", sans-serif;
+    color: $subtitle-color;
+  }
+  &__button {
+    max-width: 19rem;
+    max-height: 8rem;
+    padding: 2.9rem 3.6rem;
+    margin-top: 4.2rem;
+    font: normal normal 700 1.6rem "Plus Jakarta Sans";
+    text-transform: uppercase;
+    color: $button-text-color;
+    background: $btn-background-color;
+    border-radius: 0.8rem;
+  }
+  &__image {
+    position: absolute;
+    left: 55%;
+    bottom: 0;
+    z-index: -1;
+  }
+}
