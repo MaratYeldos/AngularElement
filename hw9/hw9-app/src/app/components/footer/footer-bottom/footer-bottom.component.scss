@@ -1,0 +1,35 @@
+$background-color: #004D7B;
+$copyright-text-color: #D9DBE1;
+
+$icons-background-color: #095872;
+
+
+.footer__bottom {
+  max-width: 100%;
+  padding: 2.2rem 1rem 2.2rem 1rem;
+  background: $background-color;
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-left {
+    font: normal normal 400 1.4rem 'Inter', sans-serif;
+    color: $copyright-text-color;
+  }
+  &-icons {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1.6rem;
+  }
+  &-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $icons-background-color;
+    border-radius: 50%;
+  }
+}

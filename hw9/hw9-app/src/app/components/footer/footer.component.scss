@@ -1,0 +1,30 @@
+$background-color: #094b72;
+
+$logo-color: #f9f8f9;
+$column-header-color: #f4f5f7;
+$list-item-color: #eeeff4;
+
+.footer {
+  max-width: 144rem;
+  padding: 7.3rem 0rem 0rem 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 9rem;
+  background: $background-color;
+  &__all {
+    padding: 1rem;
+  }
+  &__wrapper {
+    display: flex;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    &-text {
+      font: normal normal 700 2.2rem "Poppins", sans-serif;
+      letter-spacing: 1.5rem;
+      color: $logo-color;
+    }
+  }
+}

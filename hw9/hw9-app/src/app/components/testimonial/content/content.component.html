@@ -1,0 +1,21 @@
+<div class="testimonial__wrapper">
+  <div class="testimonial__content" *ngFor="let testimonial of testimonials">
+    <div class="testimonial__content-card">
+      <div class="testimonial__content-card-title">
+        {{ testimonial.cardTitle }}
+      </div>
+      <div class="testimonial__content-card-description">
+        {{ testimonial.cardDescription }}
+      </div>
+    </div>
+    <div class="testimonial__content-client">
+      <div class="testimonial__content-client-image">
+        <img [src]="testimonial.clientImagePath" alt="person">
+      </div>
+      <div class="testimonial__content-client-info">
+        <div class="testimonial__content-client-name">{{ testimonial.clientName }}</div>
+        <div class="testimonial__content-client-post">{{ testimonial.clientPost }}</div>
+      </div>
+    </div>
+  </div>
+</div>

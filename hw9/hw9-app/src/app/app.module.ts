@@ -11,6 +11,9 @@ import { CallToActionComponent } from './components/call-to-action/call-to-actio
 import { FooterComponent } from './components/footer/footer.component';
 import { WhyCardComponent } from './components/why/why-card/why-card.component';
 import { CountComponent } from './components/achievement/count/count.component';
+import { ContentComponent } from './components/testimonial/content/content.component';
+import { FooterColumnComponent } from './components/footer/footer-column/footer-column.component';
+import { FooterBottomComponent } from './components/footer/footer-bottom/footer-bottom.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { CountComponent } from './components/achievement/count/count.component';
     CallToActionComponent,
     FooterComponent,
     WhyCardComponent,
-    CountComponent
+    CountComponent,
+    ContentComponent,
+    FooterColumnComponent,
+    FooterBottomComponent
   ],
   imports: [
     BrowserModule

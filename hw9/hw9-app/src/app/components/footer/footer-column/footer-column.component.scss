@@ -1,0 +1,32 @@
+$column-header-color: #F4F5F7;
+$list-item-color: #EEEFF4;
+
+.footer__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.footer__column {
+  width: 16rem;
+  margin-top: 2.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 3.2rem;
+  &-head {
+    font: normal normal 500 2rem 'Inter', sans-serif;
+    color: $column-header-color;
+  }
+  &-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    &-item {
+      font: normal normal 400 1.6rem 'Inter', sans-serif;
+      color: $list-item-color;
+    }
+  }
+}
